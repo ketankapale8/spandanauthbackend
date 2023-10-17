@@ -40,6 +40,8 @@ export const register = async (req, res) => {
       otp_expiry: new Date(Date.now() + process.env.OTP_EXPIRY * 60 * 60* 10000),
     });
 
+    
+
     // res.send({success : true })
 
     await sendMail(

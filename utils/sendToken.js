@@ -13,7 +13,10 @@
         _id: user._id,
         name : user.name,
         email : user.email,
-        verified : user.verified
+        verified : user.verified,
+        occupation : user.occupation,
+        mob : user.mob,
+        date : user.date
     }
 
     res.cookie("jwt", token , options)
