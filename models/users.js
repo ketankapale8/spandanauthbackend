@@ -21,6 +21,14 @@ const userSchema = new mongoose.Schema({
         minlength: [8 , "Password must be atleast 8 characters long"],
         select: false
     },
+    occupation : {
+        type : String,
+        required: false,
+    }, 
+    date : {
+        type : String,
+        required : false
+    },
 
 
     createdAt: {
@@ -28,10 +36,7 @@ const userSchema = new mongoose.Schema({
         default : Date.now,
     },
 
-    country : {
-        type: String,
-        required: false
-    },
+    
     Adhaar : {
         type: Number,
         required: false

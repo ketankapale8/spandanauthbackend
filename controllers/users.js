@@ -33,6 +33,10 @@ export const register = async (req, res) => {
       name,
       email,
       password,
+      occupation, 
+      date, 
+      mob,
+      verified,
     
      
       // avatar: {
