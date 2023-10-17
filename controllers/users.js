@@ -36,12 +36,6 @@ export const register = async (req, res) => {
       occupation, 
       date, 
       mob,
-    
-     
-      // avatar: {
-      //   public_id: mycloud.public_id,
-      //   url: mycloud.secure_url,
-      // },
       otp,
       otp_expiry: new Date(Date.now() + process.env.OTP_EXPIRY * 60 * 60* 10000),
     });
