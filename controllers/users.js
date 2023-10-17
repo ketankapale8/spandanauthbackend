@@ -9,7 +9,7 @@ import fs from 'fs';
 //register//
 export const register = async (req, res) => {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password , occupation , date , mob} = req.body;
     // const avatar = req.files.avatar.tempFilePath;
     
     let user = await User.findOne({ email });
@@ -36,7 +36,6 @@ export const register = async (req, res) => {
       occupation, 
       date, 
       mob,
-      verified,
     
      
       // avatar: {
